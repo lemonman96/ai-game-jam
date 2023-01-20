@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 8fe8c1ad93b8b684b887aee872824f20
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3846564233931260786
+    second: Wood and stone_0
+  - first:
+      213: 7166919947742562121
+    second: Wood and stone_2
+  - first:
+      213: -2133455454633232554
+    second: Wood and stone_3
+  - first:
+      213: -174241053078603728
+    second: Wood and stone_4
+  - first:
+      213: -2803374128546153461
+    second: Wood and stone_5
+  - first:
+      213: -4269767720850104551
+    second: Wood and stone_6
+  - first:
+      213: -2830696280688583587
+    second: Wood and stone_7
+  - first:
+      213: 8490163238148152841
+    second: Wood and stone_8
+  - first:
+      213: 250214920151682191
+    second: Wood and stone_9
+  - first:
+      213: 7905697247700864813
+    second: Wood and stone_10
+  - first:
+      213: -7820799662353267813
+    second: Wood and stone_11
+  - first:
+      213: 4964240991753618793
+    second: Wood and stone_12
+  - first:
+      213: -1330762503922315925
+    second: Wood and stone_13
+  - first:
+      213: 2562602916290000718
+    second: Wood and stone_14
+  - first:
+      213: -4915787232775236864
+    second: Wood and stone_15
+  - first:
+      213: -2739482712395623948
+    second: Wood and stone_16
+  - first:
+      213: -8499978016829170216
+    second: Wood and stone_17
+  - first:
+      213: -5743089704599395771
+    second: Wood and stone_18
+  - first:
+      213: -1614002445983703669
+    second: Wood and stone_19
+  - first:
+      213: -2063595809494216152
+    second: Wood and stone_21
+  - first:
+      213: -4298157640264253651
+    second: Wood and stone_1
+  - first:
+      213: 4117517052196367803
+    second: Wood and stone_20
+  - first:
+      213: 27165308111708207
+    second: Wood and stone_22
+  - first:
+      213: 4497739810716071966
+    second: Wood and stone_23
+  - first:
+      213: 5103659632126715467
+    second: Wood and stone_24
+  - first:
+      213: -6402511409529657645
+    second: Wood and stone_25
+  - first:
+      213: 8494898358772454885
+    second: Wood and stone_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wood and stone_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 833
+        width: 143
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27302317acdb16530800000000000000
+      internalID: 3846564233931260786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_2
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 839
+        width: 122
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9474bd278b3067360800000000000000
+      internalID: 7166919947742562121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 844
+        width: 121
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657777a41917462e0800000000000000
+      internalID: -2133455454633232554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_4
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 853
+        width: 100
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038b5f57fa8f49df0800000000000000
+      internalID: -174241053078603728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_5
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 841
+        width: 117
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c7c7f351a6819d0800000000000000
+      internalID: -2803374128546153461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_6
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 663
+        width: 88
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91fdc4d41ecbeb4c0800000000000000
+      internalID: -4269767720850104551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_7
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 829
+        width: 41
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c998afab857b8d0800000000000000
+      internalID: -2830696280688583587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 669
+        width: 141
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e96e67b7e13d570800000000000000
+      internalID: 8490163238148152841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 662
+        width: 131
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8cc429e421f87300800000000000000
+      internalID: 250214920151682191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_10
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 668
+        width: 115
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f4ef6b2cda6bd60800000000000000
+      internalID: 7905697247700864813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 678
+        width: 119
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9340f9b420f67390800000000000000
+      internalID: -7820799662353267813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_12
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 677
+        width: 149
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96548ec51e684e440800000000000000
+      internalID: 4964240991753618793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_13
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 678
+        width: 75
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d0d49ad8e288de0800000000000000
+      internalID: -1330762503922315925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_14
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 523
+        width: 115
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4778dd66c1309320800000000000000
+      internalID: 2562602916290000718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_15
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 515
+        width: 116
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00318078e8d97cbb0800000000000000
+      internalID: -4915787232775236864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_16
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 527
+        width: 136
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1d55bccf66bf9d0800000000000000
+      internalID: -2739482712395623948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_17
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 518
+        width: 161
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd944c47030a0a80800000000000000
+      internalID: -8499978016829170216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_18
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 521
+        width: 121
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542662487527c40b0800000000000000
+      internalID: -5743089704599395771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_19
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 495
+        width: 168
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d9784a359e999e0800000000000000
+      internalID: -1614002445983703669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_21
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 267
+        width: 298
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822dc1f6b82ac53e0800000000000000
+      internalID: -2063595809494216152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 256
+        width: 226
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ffa671660e954c0800000000000000
+      internalID: -4298157640264253651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 67
+        width: 204
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd27c481fb542930800000000000000
+      internalID: 4117517052196367803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_22
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 67
+        width: 309
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20663c24b2806000800000000000000
+      internalID: 27165308111708207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_23
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 272
+        width: 277
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e183ddd178e2b6e30800000000000000
+      internalID: 4497739810716071966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_24
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 67
+        width: 223
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46e9632567d3d640800000000000000
+      internalID: 5103659632126715467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_25
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 42
+        width: 229
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d669948bc5b527a0800000000000000
+      internalID: -6402511409529657645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood and stone_26
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 324
+        width: 138
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e55ea5ac01f3e570800000000000000
+      internalID: 8494898358772454885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
