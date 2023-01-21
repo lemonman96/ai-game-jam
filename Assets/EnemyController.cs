@@ -8,6 +8,8 @@ public class EnemyController : MonoBehaviour
     private Collider2D coneCollider;
     Vector2 direction;
     private bool isInCombat;
+    public float speed = 5f;
+    public int HP = 10;
 
     // Start is called before the first frame update
     private void Start() {
@@ -23,6 +25,12 @@ public class EnemyController : MonoBehaviour
     private void Update() {
 
         this.GetComponent<Rigidbody2D>().AddForce(direction, ForceMode2D.Impulse) ;
+        if(HP < 1)
+        {
+
+            Destroy(gameObject);
+
+        }
     }
     private void OnTriggerEnter2D(Collider2D other) {
         isInCombat  = true;
@@ -32,5 +40,12 @@ public class EnemyController : MonoBehaviour
     private void updateDirection() {
         direction = new Vector2(Random.Range(-1, 2) * 0.01f, Random.Range(-1,2) * 0.01f);
         Debug.Log(direction.x + ' ' + direction.y);
+    }
+
+    public void Hit(int DMG)
+    {
+
+        HP -= DMG;
+
     }
 }
