@@ -5,35 +5,18 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public Vector3 InputDir;
-    public bool Alive;
-    public int HP, MHP, MP, MMP, STR, DEF, ATK, AGL, EXP, SPD;
-    public string Name;
+    private bool isAlive;
+    private int currentHp, currentAp, maxHp = 100, maxAp = 10;
 
 
     // Start is called before the first frame update
-    void Start()
-    {
-        HP = MHP;
-        MP = MMP;
+    private void Start() {
+        currentHp = maxHp;
+        currentAp = maxAp;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-
-        InputDir = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-
-        if(InputDir != Vector3.zero)//Moving!  
-        {
-
-            //do the move here!
-            transform.position += InputDir * (SPD * .01f);
-
-        }
-        else//not moving!
-        {
-            
-        }
+    private void Update() {
+        
     }
 }
