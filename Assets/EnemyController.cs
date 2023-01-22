@@ -4,27 +4,21 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    private Collider2D circleCollider;
-    private Collider2D coneCollider;
-    Vector2 direction;
-    private bool isInCombat;
+    private GameObject viewCone;
+    private Vector2 currentDirection; 
+    private bool isInCombat = false;
     public float speed = 5f;
     public int HP = 10;
 
     // Start is called before the first frame update
     private void Start() {
-        circleCollider = this.GetComponent<CircleCollider2D>();
-        coneCollider = this.GetComponent<EdgeCollider2D>();
-        direction = new Vector2(0,0);
-        isInCombat = false;
-        
+        viewCone = this.transform.GetChild(0).gameObject;
         InvokeRepeating("updateDirection", 0.0f, 4.0f);
     }
 
     // Update is called once per frame
     private void Update() {
-
-        this.GetComponent<Rigidbody2D>().AddForce(direction, ForceMode2D.Impulse) ;
+        this.GetComponent<Rigidbody2D>().AddForce(currentDirection * 0.01f, ForceMode2D.Impulse);
         if(HP < 1)
         {
 
@@ -32,14 +26,16 @@ public class EnemyController : MonoBehaviour
 
         }
     }
-    private void OnTriggerEnter2D(Collider2D other) {
-        isInCombat  = true;
-        print("collided!");
-    }
 
     private void updateDirection() {
-        direction = new Vector2(Random.Range(-1, 2) * 0.01f, Random.Range(-1,2) * 0.01f);
-        Debug.Log(direction.x + ' ' + direction.y);
+        currentDirection  = new Vector2(Random.Range(-1, 2), Random.Range(-1,2));
+        if(currentDirection != Vector2.zero) {
+            print( -Vector2.Angle(viewCone.GetComponent<EnemyViewController>().getDirection(), currentDirection));
+            viewCone.transform.Rotate(0f, 0f, Vector2.SignedAngle(viewCone.GetComponent<EnemyViewController>().getDirection(), currentDirection));
+            viewCone.GetComponent<EnemyViewController>().setDirection(currentDirection);
+        }
+
+        //Debug.Log(currentDirection);
     }
 
     public void Hit(int DMG)
@@ -47,5 +43,13 @@ public class EnemyController : MonoBehaviour
 
         HP -= DMG;
 
+    }
+
+    public bool getIsInCombat() {
+        return this.isInCombat;
+    }
+
+    public void setIsInCombat(bool isInCombat) {
+        this.isInCombat = isInCombat;
     }
 }
