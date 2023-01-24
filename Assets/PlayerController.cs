@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
 
     private bool isAlive;
-    public bool isInCombat = false;
     private int currentHp, currentAp, maxHp = 100, maxAp = 10;
     public GameObject SlashAttack;
 
@@ -18,7 +17,6 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     private void Update() {
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
@@ -60,13 +58,5 @@ public class PlayerController : MonoBehaviour
 
         GetComponent<Rigidbody2D>().AddForce(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * 10f, ForceMode2D.Impulse);
 
-    }
-
-    public bool getIsInCombat() {
-        return this.isInCombat;
-    }
-
-    public void setIsInCombat(bool isInCombat) {
-        this.isInCombat = isInCombat;
     }
 }

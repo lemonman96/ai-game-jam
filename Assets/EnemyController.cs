@@ -6,7 +6,6 @@ public class EnemyController : MonoBehaviour
 {
     private GameObject viewCone;
     private Vector2 currentDirection; 
-    private bool isInCombat = false;
     public float speed = 5f;
     public int HP = 10;
 
@@ -43,13 +42,5 @@ public class EnemyController : MonoBehaviour
 
         HP -= DMG;
 
-    }
-
-    public bool getIsInCombat() {
-        return this.isInCombat;
-    }
-
-    public void setIsInCombat(bool isInCombat) {
-        this.isInCombat = isInCombat;
     }
 }
