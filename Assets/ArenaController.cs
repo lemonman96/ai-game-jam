@@ -5,7 +5,7 @@ using UnityEngine;
 public class ArenaController : MonoBehaviour
 {
     
-    Queue<GameObject> turnQueue = new Queue<GameObject>();
+    public Queue<GameObject> turnQueue = new Queue<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -21,35 +21,36 @@ public class ArenaController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other) {
         if(other.tag.Equals("Player")) {
-            startCombat(other, false);
+            startCombat(false);
+        } else {
+            //make sure enemy stays inside
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag.Equals("Player")) {
-            startCombat(other, true);
+            startCombat(true);
         }
     }
 
 
-    private void startCombat(Collider2D playerCollider, bool combatEnabled) {
-        turnQueue.Enqueue(playerCollider.gameObject);
-        playerCollider.GetComponent<PlayerController>().enabled = !combatEnabled;
-        playerCollider.GetComponent<PlayerTurnBasedController>().enabled = combatEnabled;        
+    private void startCombat(bool combatEnabled) {
+        List<GameObject> characters = new List<GameObject>();
+        List<Collider2D> characterColliders = new List<Collider2D>();
+        this.GetComponent<Collider2D>().OverlapCollider(new ContactFilter2D().NoFilter(), characterColliders);
 
-        List<Collider2D> enemyColliders = new List<Collider2D>();
-
-        this.GetComponent<Collider2D>().OverlapCollider(new ContactFilter2D().NoFilter(), enemyColliders);
-
-        foreach(Collider2D enemyCollider in enemyColliders) {
-            if(enemyCollider.tag.Equals("enemy")) {
-                enemyCollider.GetComponent<EnemyController>().enabled = !combatEnabled;
-                enemyCollider.GetComponent<EnemyTurnBasedController>().enabled = combatEnabled;
-                turnQueue.Enqueue(enemyCollider.gameObject);
+        foreach(Collider2D characterCollider in characterColliders) {
+            if(characterCollider.tag.Equals("enemy") || characterCollider.tag.Equals("Player")) {
+                characterCollider.GetComponent<NonCombatController>().enabled = !combatEnabled;
+                characterCollider.GetComponent<CombatController>().enabled = combatEnabled;
+                characters.Add(characterCollider.gameObject);
             }
         }
         
+
         if(combatEnabled) {
+            characters.Sort((x, y) => x.GetComponent<CombatController>().turnPriority.CompareTo(y.GetComponent<CombatController>().turnPriority));
+            turnQueue = new Queue<GameObject>(characters);
             print("combat start!");
         } else {
             Destroy(this.gameObject);

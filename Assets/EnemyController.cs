@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : NonCombatController
 {
     private GameObject viewCone;
     private Vector2 currentDirection; 

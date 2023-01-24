@@ -537,11 +537,10 @@ GameObject:
   m_Component:
   - component: {fileID: 429281947}
   - component: {fileID: 429281948}
-  - component: {fileID: 429281950}
   - component: {fileID: 429281949}
   m_Layer: 7
   m_Name: viewCollider
-  m_TagString: Untagged
+  m_TagString: enemy_view
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -576,10 +575,17 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.053334147, y: -0.0000017117709}
+  - {x: -0.6606546, y: 0.73825204}
+  - {x: -0.7016133, y: -0.7628335}
+  - {x: -0.2421191, y: -1.0524392}
+  - {x: 0.22115988, y: -1.0103513}
+  - {x: 0.46973857, y: -0.82073814}
   - {x: 2.5654168, y: -1.4325722}
   - {x: 2.5724735, y: 1.3483901}
-  - {x: -0.06696507, y: -0.017185604}
+  - {x: 0.5023851, y: 0.7608763}
+  - {x: 0.08325755, y: 0.98404104}
+  - {x: -0.24194115, y: 0.9753986}
+  - {x: -0.667722, y: 0.7337623}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -596,22 +602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315a72c3f61b9fb409019ae10741a0d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &429281950
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429281946}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.041748323}
-  serializedVersion: 2
-  m_Radius: 1
 --- !u!1 &431198654
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +759,7 @@ GameObject:
   - component: {fileID: 651369436}
   m_Layer: 6
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1487,13 +1477,27 @@ GameObject:
   - component: {fileID: 1454848509}
   - component: {fileID: 1454848512}
   - component: {fileID: 1454848513}
+  - component: {fileID: 1454848507}
   m_Layer: 7
   m_Name: enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1454848507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454848506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e9b0c1f8f6c904bb310471a26c2dc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnPriority: 1
 --- !u!114 &1454848509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2065,6 +2069,7 @@ GameObject:
   - component: {fileID: 2118595712}
   - component: {fileID: 2118595714}
   - component: {fileID: 2118595713}
+  - component: {fileID: 2118595715}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -2149,8 +2154,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe85ae3e98387d742bfc1f92d6a031cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInCombat: 0
   SlashAttack: {fileID: 956346833943392543, guid: a5a55178aeabcf143b9fb6cecf4a7f56, type: 3}
+--- !u!114 &2118595715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118595709}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e78130702acd8540ab4aa9595d70fe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnPriority: 0
 --- !u!1001 &1216351530294564785
 PrefabInstance:
   m_ObjectHideFlags: 0
