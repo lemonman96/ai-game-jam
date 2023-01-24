@@ -17,6 +17,7 @@ public class PlayerController : NonCombatController
 
     // Update is called once per frame
     private void Update() {
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * 1f, ForceMode2D.Force) ;
         if (Input.GetKeyDown(KeyCode.Space))
         {
 

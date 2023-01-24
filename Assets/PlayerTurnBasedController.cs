@@ -13,10 +13,17 @@ public class PlayerTurnBasedController : CombatController
     // Update is called once per frame
     void Update()
     {
-        GetComponentInChildren<Animator>().SetFloat("Speed", GetComponent<Rigidbody2D>().velocity.magnitude);
-    }
+        if(getIsTurn()) {
+            GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
+            camera.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, camera.transform.position.z);
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * 1f, ForceMode2D.Force) ;
+            GetComponentInChildren<Animator>().SetFloat("Speed", GetComponent<Rigidbody2D>().velocity.magnitude);
+            
+            if(Input.GetKeyUp("n")) {
+                this.getArenaController().nextTurn();
+            }
 
-    private void endTurn() {
-        
+            
+        }
     }
 }

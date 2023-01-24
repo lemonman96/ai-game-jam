@@ -13,10 +13,15 @@ public class EnemyTurnBasedController : CombatController
     // Update is called once per frame
     void Update()
     {
-        
+        if(getIsTurn()) {
+            GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
+            camera.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, camera.transform.position.z);
+            if(Input.GetKeyUp("n")) {
+                this.getArenaController().nextTurn();
+            }
+            
+        }
     }
 
-    private void endTurn() {
-        
-    }
+
 }
