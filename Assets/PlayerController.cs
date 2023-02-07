@@ -6,18 +6,16 @@ public class PlayerController : NonCombatController
 {
 
     private bool isAlive;
-    private int currentHp, currentAp, maxHp = 100, maxAp = 10;
     public GameObject SlashAttack;
 
     // Start is called before the first frame update
     private void Start() {
-        currentHp = maxHp;
-        currentAp = maxAp;
+
     }
 
     // Update is called once per frame
     private void Update() {
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * 1f, ForceMode2D.Force) ;
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * 1f, ForceMode2D.Force);
         if (Input.GetKeyDown(KeyCode.Space))
         {
 

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class ArenaController : MonoBehaviour
 {
-    
+    private bool combatEnabled = false;
     public Queue<CombatController> turnQueue = new Queue<CombatController>();
+    public List<CombatController> combantants = new List<CombatController>();
     private CombatController currentCharacter;
 
     // Start is called before the first frame update
@@ -17,7 +18,20 @@ public class ArenaController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(combatEnabled && combantants.Count == 1) {
+            startCombat(GameObject.Find("Player").GetComponent<CircleCollider2D>(), false);
+        }
+    }
+
+    private bool isAllEnemiesDead() {
+        foreach(CombatController combatController in combantants) {
+            if(combatController && combatController.gameObject.tag.Equals("enemy")) {
+                print(false);
+                return false;
+            }
+        }
+        print(true);
+        return true;
     }
 
     private void OnTriggerExit2D(Collider2D other) {
@@ -39,6 +53,7 @@ public class ArenaController : MonoBehaviour
             currentCharacter.endTurn();
             turnQueue.Enqueue(currentCharacter);
         }
+
         currentCharacter = turnQueue.Dequeue();
         currentCharacter.startTurn();
     }
@@ -69,12 +84,15 @@ public class ArenaController : MonoBehaviour
         if(combatEnabled) {
             characters.Sort((x, y) => x.turnPriority.CompareTo(y.turnPriority));
             turnQueue = new Queue<CombatController>(characters);
+            combantants = characters;
             nextTurn();
             print("combat start!");
         } else {
             Destroy(this.gameObject);
+            GameObject.Find("PlayerMenu").GetComponent<Canvas>().enabled = false;
             print("combat end!");
         }
+        this.combatEnabled = combatEnabled;
     }
 
 }
